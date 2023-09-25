@@ -1,0 +1,22 @@
+psql (14.1)
+Type "help" for help.
+
+praveen=# create database bookmyshow18jan23
+praveen-# ;
+CREATE DATABASE
+praveen=# create user bookmyshow18jan23;
+CREATE ROLE
+praveen=# grant all privileges on database bookmyshow18jan23 to user bookmyshow18jan23;
+ERROR:  syntax error at or near "user"
+LINE 1: ...t all privileges on database bookmyshow18jan23 to user bookm...
+                                                             ^
+praveen=# grant all privileges on database bookmyshow18jan23 to bookmyshow18jan23;
+GRANT
+praveen=#
+
+
+Agenda:
+
+Controller, Services, Repositories -> Booking Ticket
+Handling concurrency issue // Ability to book a ticket
+// Break till 10:13 PM // After break: // 1. Handle concurrency // 2. BookMyShow
